@@ -18,15 +18,720 @@ import "../styles/global.css";
 
     <body>
         <main>
-            <div class="mx-auto max-w-7xl px-5 py-20">
-                <p class="text-sm font-semibold text-[var(--color-accent)]">
-                    Acesso antecipado
-                </p>
+            <section class="relative overflow-hidden bg-white">
+                <div
+                    class="absolute inset-x-0 top-0 -z-10 h-[520px]
+        bg-[radial-gradient(circle_at_top_right,rgba(22,163,106,0.10),transparent_42%)]"
+                >
+                </div>
 
-                <h1 class="mt-4 max-w-3xl text-5xl font-bold tracking-tight">
-                    Pare de perder clientes depois de enviar o orçamento.
-                </h1>
-            </div>
+                <div class="mx-auto max-w-7xl px-5 pb-20 pt-6 sm:px-6 lg:px-8">
+                    <header class="flex items-center justify-between">
+                        <a
+                            href="/"
+                            class="flex items-center gap-2 font-bold tracking-tight text-[var(--color-brand)]"
+                        >
+                            <span
+                                class="flex size-9 items-center justify-center rounded-xl
+              bg-[var(--color-brand)] text-sm text-white"
+                            >
+                                O
+                            </span>
+
+                            <span class="text-lg">Orça</span>
+                        </a>
+
+                        <a
+                            href="#interesse"
+                            class="hidden rounded-full border border-[var(--color-border)]
+            px-4 py-2 text-sm font-semibold text-[var(--color-text)]
+            transition hover:border-[var(--color-brand)]
+            hover:text-[var(--color-brand)] sm:inline-flex"
+                        >
+                            Quero testar
+                        </a>
+                    </header>
+
+                    <div
+                        class="grid items-center gap-14 pb-4 pt-16
+          lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:pt-24"
+                    >
+                        <div>
+                            <div
+                                class="inline-flex items-center gap-2 rounded-full
+              border border-[var(--color-border)] bg-white px-3 py-1.5
+              text-sm font-medium text-[var(--color-muted)]
+              shadow-sm"
+                            >
+                                <span
+                                    class="size-2 rounded-full bg-[var(--color-accent)]
+                shadow-[0_0_0_4px_rgba(22,163,106,0.12)]"
+                                ></span>
+
+                                Feito para quem envia orçamento pelo WhatsApp
+                            </div>
+
+                            <h1
+                                class="mt-7 max-w-3xl text-4xl font-bold leading-[1.06]
+              tracking-[-0.04em] text-[var(--color-text)]
+              sm:text-5xl lg:text-[4rem]"
+                            >
+                                Pare de perder clientes depois de enviar o
+                                orçamento.
+                            </h1>
+
+                            <p
+                                class="mt-6 max-w-2xl text-lg leading-8
+              text-[var(--color-muted)] sm:text-xl"
+                            >
+                                Crie uma proposta profissional, envie pelo
+                                WhatsApp e acompanhe quando o cliente
+                                visualizar, aceitar ou deixar você esperando.
+                            </p>
+
+                            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                                <a
+                                    href="#interesse"
+                                    class="inline-flex min-h-12 items-center justify-center
+                rounded-xl bg-[var(--color-brand)] px-6 py-3
+                font-semibold text-white transition
+                hover:bg-[var(--color-brand-dark)]"
+                                >
+                                    Quero testar grátis
+                                    <span class="ml-2" aria-hidden="true"
+                                        >→</span
+                                    >
+                                </a>
+
+                                <a
+                                    href="#como-funciona"
+                                    class="inline-flex min-h-12 items-center justify-center
+                rounded-xl border border-[var(--color-border)]
+                bg-white px-6 py-3 font-semibold
+                text-[var(--color-text)] transition
+                hover:border-[var(--color-brand)]"
+                                >
+                                    Ver como funciona
+                                </a>
+                            </div>
+
+                            <div
+                                class="mt-7 flex flex-wrap gap-x-6 gap-y-2
+              text-sm text-[var(--color-muted)]"
+                            >
+                                <span>Sem cartão</span>
+                                <span>Acesso antecipado</span>
+                                <span>Focado em prestadores de serviço</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative mx-auto w-full max-w-lg lg:max-w-none"
+                        >
+                            <div
+                                class="absolute -left-6 top-16 hidden w-48 rounded-2xl
+              border border-[var(--color-border)] bg-white p-4
+              shadow-[0_18px_50px_rgba(11,59,60,0.10)]
+              xl:block"
+                            >
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="flex size-9 items-center justify-center
+                  rounded-full bg-[#e9f8f1] text-sm font-bold
+                  text-[var(--color-accent)]"
+                                    >
+                                        ✓
+                                    </span>
+
+                                    <div>
+                                        <p
+                                            class="text-xs text-[var(--color-muted)]"
+                                        >
+                                            Nova visualização
+                                        </p>
+
+                                        <p class="mt-0.5 text-sm font-semibold">
+                                            Cliente abriu agora
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-[28px] border border-[var(--color-border)]
+              bg-[var(--color-surface)] p-3
+              shadow-[0_30px_80px_rgba(11,59,60,0.13)]"
+                            >
+                                <div
+                                    class="overflow-hidden rounded-[22px]
+                border border-[var(--color-border)] bg-white"
+                                >
+                                    <div
+                                        class="flex items-center justify-between
+                  border-b border-[var(--color-border)]
+                  px-5 py-4"
+                                    >
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="size-2.5 rounded-full bg-[#ef6a67]"
+                                            ></span>
+                                            <span
+                                                class="size-2.5 rounded-full bg-[#e7b84c]"
+                                            ></span>
+                                            <span
+                                                class="size-2.5 rounded-full bg-[#5cc489]"
+                                            ></span>
+                                        </div>
+
+                                        <span
+                                            class="text-xs font-medium text-[var(--color-muted)]"
+                                        >
+                                            proposta.online
+                                        </span>
+                                    </div>
+
+                                    <div class="p-5 sm:p-6">
+                                        <div
+                                            class="flex items-start justify-between gap-5"
+                                        >
+                                            <div>
+                                                <p
+                                                    class="text-xs font-semibold uppercase
+                        tracking-[0.14em] text-[var(--color-muted)]"
+                                                >
+                                                    Orçamento #1042
+                                                </p>
+
+                                                <h2
+                                                    class="mt-2 text-xl font-bold tracking-tight"
+                                                >
+                                                    Instalação de
+                                                    ar-condicionado
+                                                </h2>
+
+                                                <p
+                                                    class="mt-1 text-sm text-[var(--color-muted)]"
+                                                >
+                                                    Cliente: Carlos Henrique
+                                                </p>
+                                            </div>
+
+                                            <span
+                                                class="shrink-0 rounded-full bg-[#e9f8f1]
+                      px-3 py-1.5 text-xs font-semibold
+                      text-[var(--color-accent)]"
+                                            >
+                                                Visualizado
+                                            </span>
+                                        </div>
+
+                                        <div class="mt-7">
+                                            <p
+                                                class="text-sm text-[var(--color-muted)]"
+                                            >
+                                                Valor da proposta
+                                            </p>
+
+                                            <p
+                                                class="mt-1 text-3xl font-bold tracking-tight"
+                                            >
+                                                R$ 1.250,00
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            class="mt-7 grid gap-3 rounded-2xl
+                    bg-[var(--color-surface)] p-4 sm:grid-cols-2"
+                                        >
+                                            <div>
+                                                <p
+                                                    class="text-xs text-[var(--color-muted)]"
+                                                >
+                                                    Visualizações
+                                                </p>
+
+                                                <p class="mt-1 font-semibold">
+                                                    3 vezes
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <p
+                                                    class="text-xs text-[var(--color-muted)]"
+                                                >
+                                                    Última visualização
+                                                </p>
+
+                                                <p class="mt-1 font-semibold">
+                                                    Hoje, 14:32
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="mt-4 flex items-center gap-3 rounded-2xl
+                    border border-[#ecdca8] bg-[#fffaf0] p-4"
+                                        >
+                                            <span
+                                                class="flex size-9 shrink-0 items-center justify-center
+                      rounded-full bg-[#fff1c7] text-sm"
+                                            >
+                                                !
+                                            </span>
+
+                                            <div>
+                                                <p
+                                                    class="text-sm font-semibold"
+                                                >
+                                                    Aguardando resposta
+                                                </p>
+
+                                                <p
+                                                    class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                >
+                                                    Enviado há 2 dias
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            class="mt-5 inline-flex w-full items-center
+                    justify-center rounded-xl
+                    bg-[var(--color-brand)] px-5 py-3
+                    text-sm font-semibold text-white"
+                                            type="button"
+                                        >
+                                            Fazer follow-up
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute -bottom-5 right-3 rounded-2xl
+              border border-[var(--color-border)] bg-white
+              px-4 py-3
+              shadow-[0_18px_50px_rgba(11,59,60,0.12)]
+              sm:right-8"
+                            >
+                                <p class="text-xs text-[var(--color-muted)]">
+                                    Cliente visualizou novamente
+                                </p>
+
+                                <div class="mt-1 flex items-center gap-2">
+                                    <span
+                                        class="size-2 rounded-full bg-[var(--color-accent)]"
+                                    ></span>
+
+                                    <p class="text-sm font-semibold">
+                                        há 4 minutos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[var(--color-surface)]">
+                <div
+                    class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
+                >
+                    <div
+                        class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center"
+                    >
+                        <div>
+                            <p
+                                class="text-sm font-semibold uppercase tracking-[0.16em]
+          text-[var(--color-accent)]"
+                            >
+                                O problema
+                            </p>
+
+                            <h2
+                                class="mt-4 max-w-xl text-3xl font-bold tracking-[-0.03em]
+          text-[var(--color-text)] sm:text-4xl"
+                            >
+                                Você manda o orçamento. Depois, fica tentando
+                                adivinhar o que aconteceu.
+                            </h2>
+
+                            <p
+                                class="mt-5 max-w-xl text-lg leading-8 text-[var(--color-muted)]"
+                            >
+                                O cliente pode ter visto, achado caro, esquecido
+                                de responder ou simplesmente fechado com outra
+                                pessoa.
+                            </p>
+
+                            <p
+                                class="mt-4 max-w-xl text-lg leading-8 text-[var(--color-muted)]"
+                            >
+                                O problema é que hoje você quase nunca sabe qual
+                                dessas coisas aconteceu.
+                            </p>
+                        </div>
+
+                        <div
+                            class="rounded-[28px] border border-[var(--color-border)]
+        bg-white p-5 shadow-[0_20px_60px_rgba(11,59,60,0.08)]
+        sm:p-6"
+                        >
+                            <div class="space-y-4">
+                                <div
+                                    class="rounded-2xl border border-[var(--color-border)]
+            bg-white p-4"
+                                >
+                                    <p class="text-sm font-semibold">
+                                        Orçamento enviado
+                                    </p>
+
+                                    <p
+                                        class="mt-1 text-sm text-[var(--color-muted)]"
+                                    >
+                                        Instalação Split 12.000 BTUs · R$
+                                        1.250,00
+                                    </p>
+                                </div>
+
+                                <div class="flex justify-center">
+                                    <span class="text-[var(--color-muted)]"
+                                        >↓</span
+                                    >
+                                </div>
+
+                                <div
+                                    class="rounded-2xl border border-[#ecdca8]
+            bg-[#fffaf0] p-4"
+                                >
+                                    <div
+                                        class="flex items-center justify-between gap-4"
+                                    >
+                                        <div>
+                                            <p class="text-sm font-semibold">
+                                                Cliente não respondeu
+                                            </p>
+
+                                            <p
+                                                class="mt-1 text-sm text-[var(--color-muted)]"
+                                            >
+                                                Já se passaram 2 dias
+                                            </p>
+                                        </div>
+
+                                        <span
+                                            class="rounded-full bg-[#fff1c7]
+                px-3 py-1 text-xs font-semibold"
+                                        >
+                                            E agora?
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="grid gap-3 sm:grid-cols-3">
+                                    <div
+                                        class="rounded-2xl bg-[var(--color-surface)]
+              p-4 text-center"
+                                    >
+                                        <p class="text-2xl font-bold">?</p>
+                                        <p
+                                            class="mt-1 text-xs text-[var(--color-muted)]"
+                                        >
+                                            Visualizou?
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="rounded-2xl bg-[var(--color-surface)]
+              p-4 text-center"
+                                    >
+                                        <p class="text-2xl font-bold">?</p>
+                                        <p
+                                            class="mt-1 text-xs text-[var(--color-muted)]"
+                                        >
+                                            Achou caro?
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="rounded-2xl bg-[var(--color-surface)]
+              p-4 text-center"
+                                    >
+                                        <p class="text-2xl font-bold">?</p>
+                                        <p
+                                            class="mt-1 text-xs text-[var(--color-muted)]"
+                                        >
+                                            Esqueceu?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-14 rounded-[28px] bg-[var(--color-brand)]
+      px-6 py-8 text-white sm:px-8 lg:flex
+      lg:items-center lg:justify-between lg:px-10"
+                    >
+                        <div>
+                            <p class="text-sm font-medium text-white/70">
+                                A proposta
+                            </p>
+
+                            <h3
+                                class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl"
+                            >
+                                Acompanhe cada orçamento até o fechamento.
+                            </h3>
+
+                            <p
+                                class="mt-3 max-w-2xl text-base leading-7 text-white/75"
+                            >
+                                Em vez de mandar a proposta e esperar, você sabe
+                                quem abriu, quem respondeu e quem precisa de
+                                follow-up.
+                            </p>
+                        </div>
+
+                        <a
+                            href="#como-funciona"
+                            class="mt-6 inline-flex shrink-0 items-center justify-center
+        rounded-xl bg-white px-5 py-3 font-semibold
+        text-[var(--color-brand)] transition
+        hover:bg-white/90 lg:mt-0"
+                        >
+                            Ver como funciona
+                            <span class="ml-2" aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="como-funciona" class="bg-white">
+                <div
+                    class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
+                >
+                    <div class="max-w-2xl">
+                        <p
+                            class="text-sm font-semibold uppercase tracking-[0.16em]
+        text-[var(--color-accent)]"
+                        >
+                            Como funciona
+                        </p>
+
+                        <h2
+                            class="mt-4 text-3xl font-bold tracking-[-0.03em]
+        text-[var(--color-text)] sm:text-4xl"
+                        >
+                            Do orçamento ao follow-up, sem complicação.
+                        </h2>
+
+                        <p
+                            class="mt-5 text-lg leading-8 text-[var(--color-muted)]"
+                        >
+                            Três passos para deixar de perder propostas de
+                            vista.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 grid gap-5 lg:grid-cols-3">
+                        <article
+                            class="group rounded-[24px] border border-[var(--color-border)]
+        bg-white p-6 transition
+        hover:-translate-y-1
+        hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
+                        >
+                            <div
+                                class="flex size-11 items-center justify-center rounded-xl
+          bg-[var(--color-surface)] text-sm font-bold
+          text-[var(--color-brand)]"
+                            >
+                                01
+                            </div>
+
+                            <h3 class="mt-6 text-xl font-bold tracking-tight">
+                                Crie o orçamento
+                            </h3>
+
+                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                                Informe o cliente, o serviço, os itens, valores
+                                e condições da proposta em poucos minutos.
+                            </p>
+
+                            <div
+                                class="mt-7 rounded-2xl bg-[var(--color-surface)]
+          p-4"
+                            >
+                                <div class="space-y-3">
+                                    <div>
+                                        <p
+                                            class="text-xs text-[var(--color-muted)]"
+                                        >
+                                            Serviço
+                                        </p>
+
+                                        <p class="mt-1 text-sm font-semibold">
+                                            Instalação Split 12.000 BTUs
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="flex items-end justify-between gap-4"
+                                    >
+                                        <div>
+                                            <p
+                                                class="text-xs text-[var(--color-muted)]"
+                                            >
+                                                Cliente
+                                            </p>
+
+                                            <p
+                                                class="mt-1 text-sm font-semibold"
+                                            >
+                                                Carlos Henrique
+                                            </p>
+                                        </div>
+
+                                        <p class="text-sm font-bold">
+                                            R$ 1.250
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="group rounded-[24px] border border-[var(--color-border)]
+        bg-white p-6 transition
+        hover:-translate-y-1
+        hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
+                        >
+                            <div
+                                class="flex size-11 items-center justify-center rounded-xl
+          bg-[var(--color-surface)] text-sm font-bold
+          text-[var(--color-brand)]"
+                            >
+                                02
+                            </div>
+
+                            <h3 class="mt-6 text-xl font-bold tracking-tight">
+                                Envie pelo WhatsApp
+                            </h3>
+
+                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                                O sistema gera um link profissional para você
+                                enviar diretamente ao cliente.
+                            </p>
+
+                            <div
+                                class="mt-7 rounded-2xl bg-[#eaf8f1]
+          p-4"
+                            >
+                                <p
+                                    class="text-xs font-medium text-[var(--color-muted)]"
+                                >
+                                    Mensagem enviada
+                                </p>
+
+                                <div
+                                    class="mt-3 rounded-xl bg-white p-3
+            shadow-sm"
+                                >
+                                    <p class="text-sm leading-6">
+                                        Olá, Carlos! Segue o orçamento da
+                                        instalação.
+                                    </p>
+
+                                    <div
+                                        class="mt-3 rounded-lg bg-[var(--color-surface)]
+              px-3 py-2"
+                                    >
+                                        <p
+                                            class="text-xs text-[var(--color-muted)]"
+                                        >
+                                            proposta.online/1042
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="group rounded-[24px] border border-[var(--color-border)]
+        bg-white p-6 transition
+        hover:-translate-y-1
+        hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
+                        >
+                            <div
+                                class="flex size-11 items-center justify-center rounded-xl
+          bg-[var(--color-surface)] text-sm font-bold
+          text-[var(--color-brand)]"
+                            >
+                                03
+                            </div>
+
+                            <h3 class="mt-6 text-xl font-bold tracking-tight">
+                                Acompanhe
+                            </h3>
+
+                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                                Veja se o cliente abriu, aceitou ou se a
+                                proposta ainda está esperando uma resposta.
+                            </p>
+
+                            <div class="mt-7 space-y-2">
+                                <div
+                                    class="flex items-center justify-between rounded-xl
+            bg-[var(--color-surface)] px-3 py-3"
+                                >
+                                    <span class="text-sm font-medium">
+                                        Visualizado
+                                    </span>
+
+                                    <span
+                                        class="rounded-full bg-[#e7f1ff] px-2.5 py-1
+              text-xs font-semibold text-[#2869b8]"
+                                    >
+                                        3x
+                                    </span>
+                                </div>
+
+                                <div
+                                    class="flex items-center justify-between rounded-xl
+            bg-[var(--color-surface)] px-3 py-3"
+                                >
+                                    <span class="text-sm font-medium">
+                                        Última abertura
+                                    </span>
+
+                                    <span
+                                        class="text-xs font-semibold text-[var(--color-muted)]"
+                                    >
+                                        14:32
+                                    </span>
+                                </div>
+
+                                <div
+                                    class="flex items-center justify-between rounded-xl
+            bg-[#fffaf0] px-3 py-3"
+                                >
+                                    <span class="text-sm font-medium">
+                                        Precisa de atenção
+                                    </span>
+
+                                    <span
+                                        class="rounded-full bg-[#fff1c7] px-2.5 py-1
+              text-xs font-semibold"
+                                    >
+                                        2 dias
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
