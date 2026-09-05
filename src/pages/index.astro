@@ -14,13 +14,40 @@ import "../styles/global.css";
             name="description"
             content="Crie orçamentos profissionais, envie pelo WhatsApp e acompanhe quando o cliente visualizar ou aceitar."
         />
+
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta
+            property="og:title"
+            content="Pare de perder clientes depois de enviar o orçamento."
+        />
+        <meta
+            property="og:description"
+            content="Crie propostas profissionais, envie pelo WhatsApp e acompanhe quando o cliente visualizar ou aceitar."
+        />
+        <meta property="og:image" content="/og-image.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Pare de perder clientes depois de enviar o orçamento."
+        />
+        <meta
+            name="twitter:description"
+            content="Crie propostas profissionais, envie pelo WhatsApp e acompanhe quando o cliente visualizar ou aceitar."
+        />
+        <meta name="twitter:image" content="/og-image.png" />
+
+        <link rel="icon" type="image/png" href="/favicon.png" />
     </head>
 
     <body>
         <main>
             <section class="relative overflow-hidden bg-white">
                 <div
-                    class="absolute inset-x-0 top-0 -z-10 h-[520px]
+                    class="absolute inset-x-0 top-0 -z-10 h-130
         bg-[radial-gradient(circle_at_top_right,rgba(22,163,106,0.10),transparent_42%)]"
                 >
                 </div>
@@ -29,11 +56,11 @@ import "../styles/global.css";
                     <header class="flex items-center justify-between">
                         <a
                             href="/"
-                            class="flex items-center gap-2 font-bold tracking-tight text-[var(--color-brand)]"
+                            class="flex items-center gap-2 font-bold tracking-tight text-brand"
                         >
                             <span
                                 class="flex size-9 items-center justify-center rounded-xl
-              bg-[var(--color-brand)] text-sm text-white"
+              bg-brand text-sm text-white"
                             >
                                 O
                             </span>
@@ -43,10 +70,10 @@ import "../styles/global.css";
 
                         <a
                             href="#interesse"
-                            class="hidden rounded-full border border-[var(--color-border)]
-            px-4 py-2 text-sm font-semibold text-[var(--color-text)]
-            transition hover:border-[var(--color-brand)]
-            hover:text-[var(--color-brand)] sm:inline-flex"
+                            class="hidden rounded-full border border-border
+            px-4 py-2 text-sm font-semibold text-text
+            transition hover:border-brand
+            hover:text-brand sm:inline-flex"
                         >
                             Quero testar
                         </a>
@@ -59,12 +86,12 @@ import "../styles/global.css";
                         <div>
                             <div
                                 class="inline-flex items-center gap-2 rounded-full
-              border border-[var(--color-border)] bg-white px-3 py-1.5
-              text-sm font-medium text-[var(--color-muted)]
+              border border-border bg-white px-3 py-1.5
+              text-sm font-medium text-muted
               shadow-sm"
                             >
                                 <span
-                                    class="size-2 rounded-full bg-[var(--color-accent)]
+                                    class="size-2 rounded-full bg-accent
                 shadow-[0_0_0_4px_rgba(22,163,106,0.12)]"
                                 ></span>
 
@@ -73,7 +100,7 @@ import "../styles/global.css";
 
                             <h1
                                 class="mt-7 max-w-3xl text-4xl font-bold leading-[1.06]
-              tracking-[-0.04em] text-[var(--color-text)]
+              tracking-[-0.04em] text-text
               sm:text-5xl lg:text-[4rem]"
                             >
                                 Pare de perder clientes depois de enviar o
@@ -82,7 +109,7 @@ import "../styles/global.css";
 
                             <p
                                 class="mt-6 max-w-2xl text-lg leading-8
-              text-[var(--color-muted)] sm:text-xl"
+              text-muted sm:text-xl"
                             >
                                 Crie uma proposta profissional, envie pelo
                                 WhatsApp e acompanhe quando o cliente
@@ -93,9 +120,9 @@ import "../styles/global.css";
                                 <a
                                     href="#interesse"
                                     class="inline-flex min-h-12 items-center justify-center
-                rounded-xl bg-[var(--color-brand)] px-6 py-3
+                rounded-xl bg-brand px-6 py-3
                 font-semibold text-white transition
-                hover:bg-[var(--color-brand-dark)]"
+                hover:bg-brand-dark"
                                 >
                                     Quero testar grátis
                                     <span class="ml-2" aria-hidden="true"
@@ -106,10 +133,10 @@ import "../styles/global.css";
                                 <a
                                     href="#como-funciona"
                                     class="inline-flex min-h-12 items-center justify-center
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-6 py-3 font-semibold
-                text-[var(--color-text)] transition
-                hover:border-[var(--color-brand)]"
+                text-text transition
+                hover:border-brand"
                                 >
                                     Ver como funciona
                                 </a>
@@ -117,7 +144,7 @@ import "../styles/global.css";
 
                             <div
                                 class="mt-7 flex flex-wrap gap-x-6 gap-y-2
-              text-sm text-[var(--color-muted)]"
+              text-sm text-muted"
                             >
                                 <span>Sem cartão</span>
                                 <span>Acesso antecipado</span>
@@ -130,7 +157,7 @@ import "../styles/global.css";
                         >
                             <div
                                 class="absolute -left-6 top-16 hidden w-48 rounded-2xl
-              border border-[var(--color-border)] bg-white p-4
+              border border-border bg-white p-4
               shadow-[0_18px_50px_rgba(11,59,60,0.10)]
               xl:block"
                             >
@@ -138,15 +165,13 @@ import "../styles/global.css";
                                     <span
                                         class="flex size-9 items-center justify-center
                   rounded-full bg-[#e9f8f1] text-sm font-bold
-                  text-[var(--color-accent)]"
+                  text-accent"
                                     >
                                         ✓
                                     </span>
 
                                     <div>
-                                        <p
-                                            class="text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="text-xs text-muted">
                                             Nova visualização
                                         </p>
 
@@ -158,17 +183,17 @@ import "../styles/global.css";
                             </div>
 
                             <div
-                                class="rounded-[28px] border border-[var(--color-border)]
-              bg-[var(--color-surface)] p-3
+                                class="rounded-[28px] border border-border
+              bg-surface p-3
               shadow-[0_30px_80px_rgba(11,59,60,0.13)]"
                             >
                                 <div
                                     class="overflow-hidden rounded-[22px]
-                border border-[var(--color-border)] bg-white"
+                border border-border bg-white"
                                 >
                                     <div
                                         class="flex items-center justify-between
-                  border-b border-[var(--color-border)]
+                  border-b border-border
                   px-5 py-4"
                                     >
                                         <div class="flex items-center gap-2">
@@ -184,7 +209,7 @@ import "../styles/global.css";
                                         </div>
 
                                         <span
-                                            class="text-xs font-medium text-[var(--color-muted)]"
+                                            class="text-xs font-medium text-muted"
                                         >
                                             proposta.online
                                         </span>
@@ -197,7 +222,7 @@ import "../styles/global.css";
                                             <div>
                                                 <p
                                                     class="text-xs font-semibold uppercase
-                        tracking-[0.14em] text-[var(--color-muted)]"
+                        tracking-[0.14em] text-muted"
                                                 >
                                                     Orçamento #1042
                                                 </p>
@@ -210,7 +235,7 @@ import "../styles/global.css";
                                                 </h2>
 
                                                 <p
-                                                    class="mt-1 text-sm text-[var(--color-muted)]"
+                                                    class="mt-1 text-sm text-muted"
                                                 >
                                                     Cliente: Carlos Henrique
                                                 </p>
@@ -219,16 +244,14 @@ import "../styles/global.css";
                                             <span
                                                 class="shrink-0 rounded-full bg-[#e9f8f1]
                       px-3 py-1.5 text-xs font-semibold
-                      text-[var(--color-accent)]"
+                      text-accent"
                                             >
                                                 Visualizado
                                             </span>
                                         </div>
 
                                         <div class="mt-7">
-                                            <p
-                                                class="text-sm text-[var(--color-muted)]"
-                                            >
+                                            <p class="text-sm text-muted">
                                                 Valor da proposta
                                             </p>
 
@@ -241,12 +264,10 @@ import "../styles/global.css";
 
                                         <div
                                             class="mt-7 grid gap-3 rounded-2xl
-                    bg-[var(--color-surface)] p-4 sm:grid-cols-2"
+                    bg-surface p-4 sm:grid-cols-2"
                                         >
                                             <div>
-                                                <p
-                                                    class="text-xs text-[var(--color-muted)]"
-                                                >
+                                                <p class="text-xs text-muted">
                                                     Visualizações
                                                 </p>
 
@@ -256,9 +277,7 @@ import "../styles/global.css";
                                             </div>
 
                                             <div>
-                                                <p
-                                                    class="text-xs text-[var(--color-muted)]"
-                                                >
+                                                <p class="text-xs text-muted">
                                                     Última visualização
                                                 </p>
 
@@ -287,7 +306,7 @@ import "../styles/global.css";
                                                 </p>
 
                                                 <p
-                                                    class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                    class="mt-0.5 text-xs text-muted"
                                                 >
                                                     Enviado há 2 dias
                                                 </p>
@@ -297,7 +316,7 @@ import "../styles/global.css";
                                         <button
                                             class="mt-5 inline-flex w-full items-center
                     justify-center rounded-xl
-                    bg-[var(--color-brand)] px-5 py-3
+                    bg-brand px-5 py-3
                     text-sm font-semibold text-white"
                                             type="button"
                                         >
@@ -309,18 +328,17 @@ import "../styles/global.css";
 
                             <div
                                 class="absolute -bottom-5 right-3 rounded-2xl
-              border border-[var(--color-border)] bg-white
+              border border-border bg-white
               px-4 py-3
               shadow-[0_18px_50px_rgba(11,59,60,0.12)]
               sm:right-8"
                             >
-                                <p class="text-xs text-[var(--color-muted)]">
+                                <p class="text-xs text-muted">
                                     Cliente visualizou novamente
                                 </p>
 
                                 <div class="mt-1 flex items-center gap-2">
-                                    <span
-                                        class="size-2 rounded-full bg-[var(--color-accent)]"
+                                    <span class="size-2 rounded-full bg-accent"
                                     ></span>
 
                                     <p class="text-sm font-semibold">
@@ -333,7 +351,7 @@ import "../styles/global.css";
                 </div>
             </section>
 
-            <section class="bg-[var(--color-surface)]">
+            <section class="bg-surface">
                 <div
                     class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
                 >
@@ -343,21 +361,21 @@ import "../styles/global.css";
                         <div>
                             <p
                                 class="text-sm font-semibold uppercase tracking-[0.16em]
-          text-[var(--color-accent)]"
+          text-accent"
                             >
                                 O problema
                             </p>
 
                             <h2
                                 class="mt-4 max-w-xl text-3xl font-bold tracking-[-0.03em]
-          text-[var(--color-text)] sm:text-4xl"
+          text-text sm:text-4xl"
                             >
                                 Você manda o orçamento. Depois, fica tentando
                                 adivinhar o que aconteceu.
                             </h2>
 
                             <p
-                                class="mt-5 max-w-xl text-lg leading-8 text-[var(--color-muted)]"
+                                class="mt-5 max-w-xl text-lg leading-8 text-muted"
                             >
                                 O cliente pode ter visto, achado caro, esquecido
                                 de responder ou simplesmente fechado com outra
@@ -365,7 +383,7 @@ import "../styles/global.css";
                             </p>
 
                             <p
-                                class="mt-4 max-w-xl text-lg leading-8 text-[var(--color-muted)]"
+                                class="mt-4 max-w-xl text-lg leading-8 text-muted"
                             >
                                 O problema é que hoje você quase nunca sabe qual
                                 dessas coisas aconteceu.
@@ -373,31 +391,27 @@ import "../styles/global.css";
                         </div>
 
                         <div
-                            class="rounded-[28px] border border-[var(--color-border)]
+                            class="rounded-[28px] border border-border
         bg-white p-5 shadow-[0_20px_60px_rgba(11,59,60,0.08)]
         sm:p-6"
                         >
                             <div class="space-y-4">
                                 <div
-                                    class="rounded-2xl border border-[var(--color-border)]
+                                    class="rounded-2xl border border-border
             bg-white p-4"
                                 >
                                     <p class="text-sm font-semibold">
                                         Orçamento enviado
                                     </p>
 
-                                    <p
-                                        class="mt-1 text-sm text-[var(--color-muted)]"
-                                    >
+                                    <p class="mt-1 text-sm text-muted">
                                         Instalação Split 12.000 BTUs · R$
                                         1.250,00
                                     </p>
                                 </div>
 
                                 <div class="flex justify-center">
-                                    <span class="text-[var(--color-muted)]"
-                                        >↓</span
-                                    >
+                                    <span class="text-muted">↓</span>
                                 </div>
 
                                 <div
@@ -412,9 +426,7 @@ import "../styles/global.css";
                                                 Cliente não respondeu
                                             </p>
 
-                                            <p
-                                                class="mt-1 text-sm text-[var(--color-muted)]"
-                                            >
+                                            <p class="mt-1 text-sm text-muted">
                                                 Já se passaram 2 dias
                                             </p>
                                         </div>
@@ -430,37 +442,31 @@ import "../styles/global.css";
 
                                 <div class="grid gap-3 sm:grid-cols-3">
                                     <div
-                                        class="rounded-2xl bg-[var(--color-surface)]
+                                        class="rounded-2xl bg-surface
               p-4 text-center"
                                     >
                                         <p class="text-2xl font-bold">?</p>
-                                        <p
-                                            class="mt-1 text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="mt-1 text-xs text-muted">
                                             Visualizou?
                                         </p>
                                     </div>
 
                                     <div
-                                        class="rounded-2xl bg-[var(--color-surface)]
+                                        class="rounded-2xl bg-surface
               p-4 text-center"
                                     >
                                         <p class="text-2xl font-bold">?</p>
-                                        <p
-                                            class="mt-1 text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="mt-1 text-xs text-muted">
                                             Achou caro?
                                         </p>
                                     </div>
 
                                     <div
-                                        class="rounded-2xl bg-[var(--color-surface)]
+                                        class="rounded-2xl bg-surface
               p-4 text-center"
                                     >
                                         <p class="text-2xl font-bold">?</p>
-                                        <p
-                                            class="mt-1 text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="mt-1 text-xs text-muted">
                                             Esqueceu?
                                         </p>
                                     </div>
@@ -470,7 +476,7 @@ import "../styles/global.css";
                     </div>
 
                     <div
-                        class="mt-14 rounded-[28px] bg-[var(--color-brand)]
+                        class="mt-14 rounded-[28px] bg-brand
       px-6 py-8 text-white sm:px-8 lg:flex
       lg:items-center lg:justify-between lg:px-10"
                     >
@@ -498,7 +504,7 @@ import "../styles/global.css";
                             href="#como-funciona"
                             class="mt-6 inline-flex shrink-0 items-center justify-center
         rounded-xl bg-white px-5 py-3 font-semibold
-        text-[var(--color-brand)] transition
+        text-brand transition
         hover:bg-white/90 lg:mt-0"
                         >
                             Ver como funciona
@@ -515,21 +521,19 @@ import "../styles/global.css";
                     <div class="max-w-2xl">
                         <p
                             class="text-sm font-semibold uppercase tracking-[0.16em]
-        text-[var(--color-accent)]"
+        text-accent"
                         >
                             Como funciona
                         </p>
 
                         <h2
                             class="mt-4 text-3xl font-bold tracking-[-0.03em]
-        text-[var(--color-text)] sm:text-4xl"
+        text-text sm:text-4xl"
                         >
                             Do orçamento ao follow-up, sem complicação.
                         </h2>
 
-                        <p
-                            class="mt-5 text-lg leading-8 text-[var(--color-muted)]"
-                        >
+                        <p class="mt-5 text-lg leading-8 text-muted">
                             Três passos para deixar de perder propostas de
                             vista.
                         </p>
@@ -537,15 +541,15 @@ import "../styles/global.css";
 
                     <div class="mt-12 grid gap-5 lg:grid-cols-3">
                         <article
-                            class="group rounded-[24px] border border-[var(--color-border)]
+                            class="group rounded-3xl border border-border
         bg-white p-6 transition
         hover:-translate-y-1
         hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
                         >
                             <div
                                 class="flex size-11 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] text-sm font-bold
-          text-[var(--color-brand)]"
+          bg-surface text-sm font-bold
+          text-brand"
                             >
                                 01
                             </div>
@@ -554,20 +558,18 @@ import "../styles/global.css";
                                 Crie o orçamento
                             </h3>
 
-                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-3 leading-7 text-muted">
                                 Informe o cliente, o serviço, os itens, valores
                                 e condições da proposta em poucos minutos.
                             </p>
 
                             <div
-                                class="mt-7 rounded-2xl bg-[var(--color-surface)]
+                                class="mt-7 rounded-2xl bg-surface
           p-4"
                             >
                                 <div class="space-y-3">
                                     <div>
-                                        <p
-                                            class="text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="text-xs text-muted">
                                             Serviço
                                         </p>
 
@@ -580,9 +582,7 @@ import "../styles/global.css";
                                         class="flex items-end justify-between gap-4"
                                     >
                                         <div>
-                                            <p
-                                                class="text-xs text-[var(--color-muted)]"
-                                            >
+                                            <p class="text-xs text-muted">
                                                 Cliente
                                             </p>
 
@@ -602,15 +602,15 @@ import "../styles/global.css";
                         </article>
 
                         <article
-                            class="group rounded-[24px] border border-[var(--color-border)]
+                            class="group rounded-3xl border border-border
         bg-white p-6 transition
         hover:-translate-y-1
         hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
                         >
                             <div
                                 class="flex size-11 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] text-sm font-bold
-          text-[var(--color-brand)]"
+          bg-surface text-sm font-bold
+          text-brand"
                             >
                                 02
                             </div>
@@ -619,7 +619,7 @@ import "../styles/global.css";
                                 Envie pelo WhatsApp
                             </h3>
 
-                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-3 leading-7 text-muted">
                                 O sistema gera um link profissional para você
                                 enviar diretamente ao cliente.
                             </p>
@@ -628,9 +628,7 @@ import "../styles/global.css";
                                 class="mt-7 rounded-2xl bg-[#eaf8f1]
           p-4"
                             >
-                                <p
-                                    class="text-xs font-medium text-[var(--color-muted)]"
-                                >
+                                <p class="text-xs font-medium text-muted">
                                     Mensagem enviada
                                 </p>
 
@@ -644,12 +642,10 @@ import "../styles/global.css";
                                     </p>
 
                                     <div
-                                        class="mt-3 rounded-lg bg-[var(--color-surface)]
+                                        class="mt-3 rounded-lg bg-surface
               px-3 py-2"
                                     >
-                                        <p
-                                            class="text-xs text-[var(--color-muted)]"
-                                        >
+                                        <p class="text-xs text-muted">
                                             proposta.online/1042
                                         </p>
                                     </div>
@@ -658,15 +654,15 @@ import "../styles/global.css";
                         </article>
 
                         <article
-                            class="group rounded-[24px] border border-[var(--color-border)]
+                            class="group rounded-3xl border border-border
         bg-white p-6 transition
         hover:-translate-y-1
         hover:shadow-[0_20px_50px_rgba(11,59,60,0.08)]"
                         >
                             <div
                                 class="flex size-11 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] text-sm font-bold
-          text-[var(--color-brand)]"
+          bg-surface text-sm font-bold
+          text-brand"
                             >
                                 03
                             </div>
@@ -675,7 +671,7 @@ import "../styles/global.css";
                                 Acompanhe
                             </h3>
 
-                            <p class="mt-3 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-3 leading-7 text-muted">
                                 Veja se o cliente abriu, aceitou ou se a
                                 proposta ainda está esperando uma resposta.
                             </p>
@@ -683,7 +679,7 @@ import "../styles/global.css";
                             <div class="mt-7 space-y-2">
                                 <div
                                     class="flex items-center justify-between rounded-xl
-            bg-[var(--color-surface)] px-3 py-3"
+            bg-surface px-3 py-3"
                                 >
                                     <span class="text-sm font-medium">
                                         Visualizado
@@ -699,14 +695,14 @@ import "../styles/global.css";
 
                                 <div
                                     class="flex items-center justify-between rounded-xl
-            bg-[var(--color-surface)] px-3 py-3"
+            bg-surface px-3 py-3"
                                 >
                                     <span class="text-sm font-medium">
                                         Última abertura
                                     </span>
 
                                     <span
-                                        class="text-xs font-semibold text-[var(--color-muted)]"
+                                        class="text-xs font-semibold text-muted"
                                     >
                                         14:32
                                     </span>
@@ -733,7 +729,7 @@ import "../styles/global.css";
                 </div>
             </section>
 
-            <section class="overflow-hidden bg-[var(--color-surface)]">
+            <section class="overflow-hidden bg-surface">
                 <div
                     class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
                 >
@@ -744,21 +740,21 @@ import "../styles/global.css";
                         <div>
                             <p
                                 class="text-sm font-semibold uppercase tracking-[0.16em]
-          text-[var(--color-accent)]"
+          text-accent"
                             >
                                 Depois do envio
                             </p>
 
                             <h2
                                 class="mt-4 max-w-xl text-3xl font-bold tracking-[-0.03em]
-          text-[var(--color-text)] sm:text-4xl"
+          text-text sm:text-4xl"
                             >
                                 Saiba quais orçamentos merecem sua atenção hoje.
                             </h2>
 
                             <p
                                 class="mt-5 max-w-xl text-lg leading-8
-          text-[var(--color-muted)]"
+          text-muted"
                             >
                                 Em vez de procurar conversas antigas no
                                 WhatsApp, veja rapidamente quem abriu sua
@@ -771,14 +767,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Veja quando uma proposta foi
                                         visualizada.
                                     </p>
@@ -788,14 +782,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Identifique rapidamente quem ainda não
                                         respondeu.
                                     </p>
@@ -805,14 +797,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Saiba onde vale a pena fazer follow-up.
                                     </p>
                                 </div>
@@ -828,17 +818,17 @@ import "../styles/global.css";
                             </div>
 
                             <div
-                                class="rounded-[28px] border border-[var(--color-border)]
+                                class="rounded-[28px] border border-border
           bg-[#edf3f1] p-3
           shadow-[0_30px_80px_rgba(11,59,60,0.13)]"
                             >
                                 <div
                                     class="overflow-hidden rounded-[22px]
-            border border-[var(--color-border)] bg-white"
+            border border-border bg-white"
                                 >
                                     <div
                                         class="flex items-center justify-between
-              border-b border-[var(--color-border)]
+              border-b border-border
               px-5 py-4 sm:px-6"
                                     >
                                         <div>
@@ -847,7 +837,7 @@ import "../styles/global.css";
                                             </p>
 
                                             <p
-                                                class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                class="mt-0.5 text-xs text-muted"
                                             >
                                                 Acompanhe o que aconteceu depois
                                                 do envio
@@ -856,7 +846,7 @@ import "../styles/global.css";
 
                                         <button
                                             type="button"
-                                            class="hidden rounded-xl bg-[var(--color-brand)]
+                                            class="hidden rounded-xl bg-brand
                 px-4 py-2 text-sm font-semibold text-white sm:block"
                                         >
                                             + Novo orçamento
@@ -867,12 +857,10 @@ import "../styles/global.css";
                                         class="grid gap-3 p-4 sm:grid-cols-3 sm:p-5"
                                     >
                                         <div
-                                            class="rounded-2xl bg-[var(--color-surface)]
+                                            class="rounded-2xl bg-surface
                 p-4"
                                         >
-                                            <p
-                                                class="text-xs text-[var(--color-muted)]"
-                                            >
+                                            <p class="text-xs text-muted">
                                                 Em aberto
                                             </p>
 
@@ -882,9 +870,7 @@ import "../styles/global.css";
                                                 R$ 8.450
                                             </p>
 
-                                            <p
-                                                class="mt-1 text-xs text-[var(--color-muted)]"
-                                            >
+                                            <p class="mt-1 text-xs text-muted">
                                                 7 propostas
                                             </p>
                                         </div>
@@ -893,9 +879,7 @@ import "../styles/global.css";
                                             class="rounded-2xl bg-[#eaf8f1]
                 p-4"
                                         >
-                                            <p
-                                                class="text-xs text-[var(--color-muted)]"
-                                            >
+                                            <p class="text-xs text-muted">
                                                 Aceitas
                                             </p>
 
@@ -905,9 +889,7 @@ import "../styles/global.css";
                                                 R$ 3.200
                                             </p>
 
-                                            <p
-                                                class="mt-1 text-xs text-[var(--color-accent)]"
-                                            >
+                                            <p class="mt-1 text-xs text-accent">
                                                 3 fechamentos
                                             </p>
                                         </div>
@@ -916,9 +898,7 @@ import "../styles/global.css";
                                             class="rounded-2xl bg-[#fff8e8]
                 p-4"
                                         >
-                                            <p
-                                                class="text-xs text-[var(--color-muted)]"
-                                            >
+                                            <p class="text-xs text-muted">
                                                 Aguardando
                                             </p>
 
@@ -962,7 +942,7 @@ import "../styles/global.css";
                                                     </p>
 
                                                     <p
-                                                        class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                        class="mt-0.5 text-xs text-muted"
                                                     >
                                                         Clientes visualizaram,
                                                         mas ainda não
@@ -974,13 +954,13 @@ import "../styles/global.css";
 
                                         <div
                                             class="overflow-hidden rounded-2xl
-                border border-[var(--color-border)]"
+                border border-border"
                                         >
                                             <div
                                                 class="hidden grid-cols-[1.5fr_0.7fr_0.8fr_0.7fr]
-                  border-b border-[var(--color-border)]
-                  bg-[var(--color-surface)] px-4 py-3
-                  text-xs font-semibold text-[var(--color-muted)]
+                  border-b border-border
+                  bg-surface px-4 py-3
+                  text-xs font-semibold text-muted
                   sm:grid"
                                             >
                                                 <span>Cliente</span>
@@ -992,7 +972,7 @@ import "../styles/global.css";
                                             </div>
 
                                             <div
-                                                class="grid gap-3 border-b border-[var(--color-border)]
+                                                class="grid gap-3 border-b border-border
                   px-4 py-4
                   sm:grid-cols-[1.5fr_0.7fr_0.8fr_0.7fr]
                   sm:items-center sm:gap-0"
@@ -1005,7 +985,7 @@ import "../styles/global.css";
                                                     </p>
 
                                                     <p
-                                                        class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                        class="mt-0.5 text-xs text-muted"
                                                     >
                                                         Higienização +
                                                         instalação
@@ -1029,7 +1009,7 @@ import "../styles/global.css";
                                                 </div>
 
                                                 <p
-                                                    class="text-xs text-[var(--color-muted)]
+                                                    class="text-xs text-muted
                     sm:text-right"
                                                 >
                                                     há 18 min
@@ -1037,7 +1017,7 @@ import "../styles/global.css";
                                             </div>
 
                                             <div
-                                                class="grid gap-3 border-b border-[var(--color-border)]
+                                                class="grid gap-3 border-b border-border
                   px-4 py-4
                   sm:grid-cols-[1.5fr_0.7fr_0.8fr_0.7fr]
                   sm:items-center sm:gap-0"
@@ -1050,7 +1030,7 @@ import "../styles/global.css";
                                                     </p>
 
                                                     <p
-                                                        class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                        class="mt-0.5 text-xs text-muted"
                                                     >
                                                         Manutenção preventiva
                                                     </p>
@@ -1066,14 +1046,14 @@ import "../styles/global.css";
                                                     <span
                                                         class="inline-flex rounded-full bg-[#e9f8f1]
                       px-2.5 py-1 text-xs font-semibold
-                      text-[var(--color-accent)]"
+                      text-accent"
                                                     >
                                                         Aceito
                                                     </span>
                                                 </div>
 
                                                 <p
-                                                    class="text-xs text-[var(--color-muted)]
+                                                    class="text-xs text-muted
                     sm:text-right"
                                                 >
                                                     hoje
@@ -1093,7 +1073,7 @@ import "../styles/global.css";
                                                     </p>
 
                                                     <p
-                                                        class="mt-0.5 text-xs text-[var(--color-muted)]"
+                                                        class="mt-0.5 text-xs text-muted"
                                                     >
                                                         Instalação Split 18.000
                                                         BTUs
@@ -1110,14 +1090,14 @@ import "../styles/global.css";
                                                     <span
                                                         class="inline-flex rounded-full bg-[#eef1f0]
                       px-2.5 py-1 text-xs font-semibold
-                      text-[var(--color-muted)]"
+                      text-muted"
                                                     >
                                                         Não visualizado
                                                     </span>
                                                 </div>
 
                                                 <p
-                                                    class="text-xs text-[var(--color-muted)]
+                                                    class="text-xs text-muted
                     sm:text-right"
                                                 >
                                                     ontem
@@ -1128,9 +1108,9 @@ import "../styles/global.css";
                                         <div class="mt-4 flex justify-end">
                                             <button
                                                 type="button"
-                                                class="rounded-xl border border-[var(--color-border)]
+                                                class="rounded-xl border border-border
                   px-4 py-2 text-sm font-semibold
-                  text-[var(--color-brand)]"
+                  text-brand"
                                             >
                                                 Ver todos os orçamentos
                                             </button>
@@ -1141,18 +1121,17 @@ import "../styles/global.css";
 
                             <div
                                 class="absolute -bottom-5 -left-3 hidden
-          rounded-2xl border border-[var(--color-border)]
+          rounded-2xl border border-border
           bg-white px-4 py-3
           shadow-[0_18px_50px_rgba(11,59,60,0.12)]
           sm:block"
                             >
-                                <p class="text-xs text-[var(--color-muted)]">
+                                <p class="text-xs text-muted">
                                     João abriu a proposta novamente
                                 </p>
 
                                 <div class="mt-1 flex items-center gap-2">
-                                    <span
-                                        class="size-2 rounded-full bg-[var(--color-accent)]"
+                                    <span class="size-2 rounded-full bg-accent"
                                     ></span>
 
                                     <p class="text-sm font-semibold">
@@ -1172,22 +1151,20 @@ import "../styles/global.css";
                     <div class="max-w-2xl">
                         <p
                             class="text-sm font-semibold uppercase tracking-[0.16em]
-        text-[var(--color-accent)]"
+        text-accent"
                         >
                             O que você ganha
                         </p>
 
                         <h2
                             class="mt-4 text-3xl font-bold tracking-[-0.03em]
-        text-[var(--color-text)] sm:text-4xl"
+        text-text sm:text-4xl"
                         >
                             Menos proposta esquecida. Mais clareza para fechar
                             serviço.
                         </h2>
 
-                        <p
-                            class="mt-5 text-lg leading-8 text-[var(--color-muted)]"
-                        >
+                        <p class="mt-5 text-lg leading-8 text-muted">
                             Tudo focado no que acontece entre enviar o orçamento
                             e receber uma resposta do cliente.
                         </p>
@@ -1195,12 +1172,12 @@ import "../styles/global.css";
 
                     <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
                                 class="flex size-10 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] font-bold text-[var(--color-brand)]"
+          bg-surface font-bold text-brand"
                             >
                                 01
                             </div>
@@ -1209,19 +1186,19 @@ import "../styles/global.css";
                                 Orçamento profissional em poucos minutos
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Organize serviço, itens, valores e condições sem
                                 depender de texto solto ou planilha improvisada.
                             </p>
                         </article>
 
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
                                 class="flex size-10 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] font-bold text-[var(--color-brand)]"
+          bg-surface font-bold text-brand"
                             >
                                 02
                             </div>
@@ -1230,19 +1207,19 @@ import "../styles/global.css";
                                 Envio simples pelo WhatsApp
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Compartilhe um link limpo e profissional
                                 diretamente com o cliente.
                             </p>
                         </article>
 
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
                                 class="flex size-10 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] font-bold text-[var(--color-brand)]"
+          bg-surface font-bold text-brand"
                             >
                                 03
                             </div>
@@ -1251,19 +1228,19 @@ import "../styles/global.css";
                                 Saiba quando o cliente visualizar
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Pare de ficar no escuro depois do envio e
                                 acompanhe quando a proposta for aberta.
                             </p>
                         </article>
 
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
                                 class="flex size-10 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] font-bold text-[var(--color-brand)]"
+          bg-surface font-bold text-brand"
                             >
                                 04
                             </div>
@@ -1272,19 +1249,19 @@ import "../styles/global.css";
                                 Veja quem ainda não respondeu
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Identifique rapidamente propostas que continuam
                                 paradas e precisam de atenção.
                             </p>
                         </article>
 
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
                                 class="flex size-10 items-center justify-center rounded-xl
-          bg-[var(--color-surface)] font-bold text-[var(--color-brand)]"
+          bg-surface font-bold text-brand"
                             >
                                 05
                             </div>
@@ -1293,14 +1270,14 @@ import "../styles/global.css";
                                 Acompanhe aceitas e perdidas
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Tenha uma visão simples de quais oportunidades
                                 avançaram e quais ficaram pelo caminho.
                             </p>
                         </article>
 
                         <article
-                            class="rounded-[22px] border border-[var(--color-border)]
+                            class="rounded-[22px] border border-border
         bg-white p-5"
                         >
                             <div
@@ -1314,7 +1291,7 @@ import "../styles/global.css";
                                 Saiba quem precisa de follow-up
                             </h3>
 
-                            <p class="mt-2 leading-7 text-[var(--color-muted)]">
+                            <p class="mt-2 leading-7 text-muted">
                                 Priorize conversas com maior chance de virar
                                 serviço em vez de procurar manualmente no
                                 WhatsApp.
@@ -1324,7 +1301,7 @@ import "../styles/global.css";
                 </div>
             </section>
 
-            <section class="bg-[var(--color-brand)] text-white">
+            <section class="bg-brand text-white">
                 <div
                     class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
                 >
@@ -1359,7 +1336,7 @@ import "../styles/global.css";
 
                         <div
                             class="rounded-[28px] border border-white/10
-        bg-white/[0.06] p-4 backdrop-blur-sm sm:p-5"
+        bg-white/6 p-4 backdrop-blur-sm sm:p-5"
                         >
                             <div class="grid gap-3 sm:grid-cols-3">
                                 <div
@@ -1460,14 +1437,14 @@ import "../styles/global.css";
                         <div>
                             <p
                                 class="text-sm font-semibold uppercase tracking-[0.16em]
-          text-[var(--color-accent)]"
+          text-accent"
                             >
                                 Acesso antecipado
                             </p>
 
                             <h2
                                 class="mt-4 max-w-xl text-3xl font-bold tracking-[-0.03em]
-          text-[var(--color-text)] sm:text-4xl"
+          text-text sm:text-4xl"
                             >
                                 Quer testar quando liberarmos os primeiros
                                 acessos?
@@ -1475,7 +1452,7 @@ import "../styles/global.css";
 
                             <p
                                 class="mt-5 max-w-xl text-lg leading-8
-          text-[var(--color-muted)]"
+          text-muted"
                             >
                                 Estamos validando a ideia com profissionais que
                                 enviam orçamentos pelo WhatsApp. Deixe seus
@@ -1487,14 +1464,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Sem compromisso e sem cartão.
                                     </p>
                                 </div>
@@ -1503,14 +1478,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Você ajuda a definir o produto antes do
                                         lançamento.
                                     </p>
@@ -1520,14 +1493,12 @@ import "../styles/global.css";
                                     <span
                                         class="mt-1 flex size-6 shrink-0 items-center
               justify-center rounded-full bg-[#e9f8f1]
-              text-xs font-bold text-[var(--color-accent)]"
+              text-xs font-bold text-accent"
                                     >
                                         ✓
                                     </span>
 
-                                    <p
-                                        class="leading-7 text-[var(--color-muted)]"
-                                    >
+                                    <p class="leading-7 text-muted">
                                         Os primeiros usuários terão prioridade
                                         nos testes.
                                     </p>
@@ -1536,10 +1507,11 @@ import "../styles/global.css";
                         </div>
 
                         <form
-                            action="/obrigado"
+                            id="validation-form"
+                            action="https://formspree.io/f/xjyveker"
                             method="post"
-                            class="rounded-[28px] border border-[var(--color-border)]
-        bg-[var(--color-surface)] p-5
+                            class="rounded-[28px] border border-border
+        bg-surface p-5
         shadow-[0_20px_60px_rgba(11,59,60,0.08)]
         sm:p-7"
                         >
@@ -1547,7 +1519,7 @@ import "../styles/global.css";
                                 <div class="sm:col-span-1">
                                     <label
                                         for="nome"
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         Seu nome
                                     </label>
@@ -1560,10 +1532,10 @@ import "../styles/global.css";
                                         required
                                         placeholder="Ex.: Carlos"
                                         class="mt-2 w-full rounded-xl border
-              border-[var(--color-border)] bg-white px-4 py-3
-              text-[var(--color-text)] outline-none transition
+              border-border bg-white px-4 py-3
+              text-text outline-none transition
               placeholder:text-[#9aa5a3]
-              focus:border-[var(--color-brand)]
+              focus:border-brand
               focus:ring-4 focus:ring-[rgba(11,59,60,0.08)]"
                                     />
                                 </div>
@@ -1571,7 +1543,7 @@ import "../styles/global.css";
                                 <div class="sm:col-span-1">
                                     <label
                                         for="whatsapp"
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         WhatsApp
                                     </label>
@@ -1584,10 +1556,10 @@ import "../styles/global.css";
                                         required
                                         placeholder="(11) 99999-9999"
                                         class="mt-2 w-full rounded-xl border
-              border-[var(--color-border)] bg-white px-4 py-3
-              text-[var(--color-text)] outline-none transition
+              border-border bg-white px-4 py-3
+              text-text outline-none transition
               placeholder:text-[#9aa5a3]
-              focus:border-[var(--color-brand)]
+              focus:border-brand
               focus:ring-4 focus:ring-[rgba(11,59,60,0.08)]"
                                     />
                                 </div>
@@ -1595,7 +1567,7 @@ import "../styles/global.css";
                                 <div class="sm:col-span-2">
                                     <label
                                         for="profissao"
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         Qual é a sua profissão?
                                     </label>
@@ -1607,10 +1579,10 @@ import "../styles/global.css";
                                         required
                                         placeholder="Ex.: Técnico de ar-condicionado"
                                         class="mt-2 w-full rounded-xl border
-              border-[var(--color-border)] bg-white px-4 py-3
-              text-[var(--color-text)] outline-none transition
+              border-border bg-white px-4 py-3
+              text-text outline-none transition
               placeholder:text-[#9aa5a3]
-              focus:border-[var(--color-brand)]
+              focus:border-brand
               focus:ring-4 focus:ring-[rgba(11,59,60,0.08)]"
                                     />
                                 </div>
@@ -1618,7 +1590,7 @@ import "../styles/global.css";
                                 <div class="sm:col-span-2">
                                     <label
                                         for="quantidade"
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         Quantos orçamentos você envia por mês?
                                     </label>
@@ -1628,9 +1600,9 @@ import "../styles/global.css";
                                         name="quantidade"
                                         required
                                         class="mt-2 w-full rounded-xl border
-              border-[var(--color-border)] bg-white px-4 py-3
-              text-[var(--color-text)] outline-none transition
-              focus:border-[var(--color-brand)]
+              border-border bg-white px-4 py-3
+              text-text outline-none transition
+              focus:border-brand
               focus:ring-4 focus:ring-[rgba(11,59,60,0.08)]"
                                     >
                                         <option value="" selected disabled>
@@ -1646,7 +1618,7 @@ import "../styles/global.css";
 
                                 <fieldset class="sm:col-span-2">
                                     <legend
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         Como você cria seus orçamentos hoje?
                                     </legend>
@@ -1654,7 +1626,7 @@ import "../styles/global.css";
                                     <div class="mt-3 grid gap-2 sm:grid-cols-3">
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
@@ -1662,77 +1634,77 @@ import "../styles/global.css";
                                                 name="ferramenta"
                                                 value="whatsapp"
                                                 required
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             WhatsApp
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="ferramenta"
                                                 value="pdf"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             PDF
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="ferramenta"
                                                 value="excel"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Excel
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="ferramenta"
                                                 value="canva"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Canva
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="ferramenta"
                                                 value="sistema"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Sistema
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="ferramenta"
                                                 value="outro"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Outro
                                         </label>
@@ -1741,7 +1713,7 @@ import "../styles/global.css";
 
                                 <fieldset class="sm:col-span-2">
                                     <legend
-                                        class="text-sm font-semibold text-[var(--color-text)]"
+                                        class="text-sm font-semibold text-text"
                                     >
                                         O que mais te incomoda hoje?
                                     </legend>
@@ -1749,7 +1721,7 @@ import "../styles/global.css";
                                     <div class="mt-3 grid gap-2">
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
@@ -1757,77 +1729,77 @@ import "../styles/global.css";
                                                 name="dor"
                                                 value="cliente-nao-responde"
                                                 required
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Cliente não responde
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="dor"
                                                 value="nao-sei-se-visualizou"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Não sei se o cliente visualizou
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="dor"
                                                 value="esqueco-follow-up"
-                                                class="accent-[var(--color-brand)]"
+                                                class="accent-brand"
                                             />
                                             Esqueço de fazer follow-up
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="dor"
                                                 value="perco-controle"
-                                                class="accent-[var(--color-brand)]"
+                                                class="var(--color-accent)"
                                             />
                                             Perco o controle dos orçamentos enviados
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="dor"
                                                 value="demoro-criar"
-                                                class="accent-[var(--color-brand)]"
+                                                class="var(--color-accent)"
                                             />
                                             Demoro para criar o orçamento
                                         </label>
 
                                         <label
                                             class="flex cursor-pointer items-center gap-3
-                rounded-xl border border-[var(--color-border)]
+                rounded-xl border border-border
                 bg-white px-4 py-3 text-sm"
                                         >
                                             <input
                                                 type="radio"
                                                 name="dor"
                                                 value="outro"
-                                                class="accent-[var(--color-brand)]"
+                                                class="var(--color-accent)"
                                             />
                                             Outro
                                         </label>
@@ -1838,9 +1810,9 @@ import "../styles/global.css";
                             <button
                                 type="submit"
                                 class="mt-6 inline-flex min-h-12 w-full items-center
-          justify-center rounded-xl bg-[var(--color-brand)]
+          justify-center rounded-xl bg-brand
           px-6 py-3 font-semibold text-white transition
-          hover:bg-[var(--color-brand-dark)]"
+          hover:bg-brand-dark"
                             >
                                 Quero participar do teste
                                 <span class="ml-2" aria-hidden="true">→</span>
@@ -1848,7 +1820,7 @@ import "../styles/global.css";
 
                             <p
                                 class="mt-4 text-center text-xs leading-5
-          text-[var(--color-muted)]"
+          text-muted"
                             >
                                 Seus dados serão usados apenas para contato
                                 sobre o acesso antecipado e validação do
@@ -1859,12 +1831,12 @@ import "../styles/global.css";
                 </div>
             </section>
 
-            <section class="bg-[var(--color-surface)]">
+            <section class="bg-surface">
                 <div
                     class="mx-auto max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-24"
                 >
                     <div
-                        class="rounded-[28px] border border-[var(--color-border)]
+                        class="rounded-[28px] border border-border
       bg-white px-6 py-10
       shadow-[0_20px_60px_rgba(11,59,60,0.08)]
       sm:px-8 lg:flex lg:items-center lg:justify-between lg:px-10"
@@ -1872,21 +1844,21 @@ import "../styles/global.css";
                         <div>
                             <p
                                 class="text-sm font-semibold uppercase tracking-[0.16em]
-          text-[var(--color-accent)]"
+          text-accent"
                             >
                                 Quer experimentar?
                             </p>
 
                             <h2
                                 class="mt-3 max-w-2xl text-3xl font-bold tracking-[-0.03em]
-          text-[var(--color-text)]"
+          text-text"
                             >
                                 Crie seu primeiro orçamento grátis.
                             </h2>
 
                             <p
                                 class="mt-3 max-w-2xl text-lg leading-8
-          text-[var(--color-muted)]"
+          text-muted"
                             >
                                 Estamos liberando os primeiros acessos
                                 gradualmente para profissionais que participarem
@@ -1897,9 +1869,9 @@ import "../styles/global.css";
                         <a
                             href="#interesse"
                             class="mt-7 inline-flex min-h-12 shrink-0 items-center
-        justify-center rounded-xl bg-[var(--color-brand)]
+        justify-center rounded-xl bg-brand
         px-6 py-3 font-semibold text-white transition
-        hover:bg-[var(--color-brand-dark)] lg:mt-0"
+        hover:bg-brand-dark lg:mt-0"
                         >
                             Criar meu primeiro orçamento grátis
                             <span class="ml-2" aria-hidden="true">→</span>
@@ -1908,5 +1880,54 @@ import "../styles/global.css";
                 </div>
             </section>
         </main>
+
+        <script>
+            const form = document.querySelector("#validation-form");
+
+            if (form instanceof HTMLFormElement) {
+                form.addEventListener("submit", async (event) => {
+                    event.preventDefault();
+
+                    const submitButton = form.querySelector(
+                        'button[type="submit"]',
+                    );
+
+                    if (submitButton instanceof HTMLButtonElement) {
+                        submitButton.disabled = true;
+                        submitButton.textContent = "Enviando...";
+                    }
+
+                    try {
+                        const response = await fetch(form.action, {
+                            method: "POST",
+                            body: new FormData(form),
+                            headers: {
+                                Accept: "application/json",
+                            },
+                        });
+
+                        if (!response.ok) {
+                            throw new Error("Erro ao enviar formulário");
+                        }
+
+                        console.log("[validation] form_submitted");
+
+                        window.location.href = "/obrigado";
+                    } catch (error) {
+                        console.error("Erro ao enviar formulário:", error);
+
+                        if (submitButton instanceof HTMLButtonElement) {
+                            submitButton.disabled = false;
+                            submitButton.textContent =
+                                "Quero participar do teste →";
+                        }
+
+                        alert(
+                            "Não conseguimos enviar seus dados agora. Tente novamente.",
+                        );
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
