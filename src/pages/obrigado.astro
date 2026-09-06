@@ -240,8 +240,14 @@ import "../styles/global.css";
                 no: "price_no",
             };
 
+            let priceAnswered = false;
+
             priceButtons.forEach((button) => {
                 button.addEventListener("click", () => {
+                    if (priceAnswered) return;
+
+                    priceAnswered = true;
+
                     const answer = button.getAttribute("data-price-answer");
 
                     if (answer) {
@@ -254,6 +260,16 @@ import "../styles/global.css";
 
                     priceButtons.forEach((item) => {
                         item.setAttribute("aria-pressed", "false");
+                    });
+
+                    priceButtons.forEach((item) => {
+                        if (item instanceof HTMLButtonElement) {
+                            item.disabled = true;
+                            item.classList.add(
+                                "opacity-60",
+                                "cursor-not-allowed",
+                            );
+                        }
                     });
 
                     button.setAttribute("aria-pressed", "true");

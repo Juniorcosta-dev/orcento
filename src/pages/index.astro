@@ -10,17 +10,19 @@ import "../styles/global.css";
 
         <title>Orcento — Envie, acompanhe e feche mais serviços</title>
 
+        <link rel="canonical" href="https://orcento.vercel.app/" />
+
         <meta
             name="description"
-            content="Com a Orcento, crie propostas profissionais, envie pelo WhatsApp e acompanhe quando o cliente visualizar ou aceitar."
+            content="No Orcento, crie propostas profissionais, envie pelo WhatsApp e acompanhe quando o cliente visualizar ou aceitar."
         />
-
         <meta property="og:site_name" content="Orcento" />
-
         <meta name="robots" content="index,follow" />
-
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pt_BR" />
+        <meta
+            property="og:locale"
+            content="pt_BR"
+        />
         <meta
             property="og:title"
             content="Orcento — Pare de perder clientes depois de enviar o orçamento."
@@ -29,7 +31,10 @@ import "../styles/global.css";
             property="og:description"
             content="Envie propostas pelo WhatsApp, acompanhe visualizações e saiba quem precisa de follow-up."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta
+            property="og:image"
+            content="https://orcento.vercel.app/og-image.png"
+        />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -40,7 +45,12 @@ import "../styles/global.css";
             name="twitter:description"
             content="Envie propostas pelo WhatsApp, acompanhe visualizações e saiba quem precisa de follow-up."
         />
-        <meta name="twitter:image" content="/og-image.png" />
+        <meta
+            name="twitter:image"
+            content="https://orcento.vercel.app/og-image.png"
+        />
+
+        <meta property="og:url" content="https://orcento.vercel.app/" />
 
         <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -88,10 +98,11 @@ import "../styles/global.css";
 
                         <a
                             href="#interesse"
+                            data-track="cta_clicked"
                             class="hidden rounded-full border border-border
-            px-4 py-2 text-sm font-semibold text-text
-            transition hover:border-brand
-            hover:text-brand sm:inline-flex"
+  px-4 py-2 text-sm font-semibold text-text
+  transition hover:border-brand
+  hover:text-brand sm:inline-flex"
                         >
                             Quero testar
                         </a>
@@ -521,6 +532,7 @@ import "../styles/global.css";
                         </div>
 
                         <a
+                            data-track="demo_clicked"
                             href="#como-funciona"
                             class="mt-6 inline-flex shrink-0 items-center justify-center
         rounded-xl bg-white px-5 py-3 font-semibold
@@ -1535,6 +1547,26 @@ import "../styles/global.css";
         shadow-[0_20px_60px_rgba(11,59,60,0.08)]
         sm:p-7"
                         >
+                            <input
+                                type="hidden"
+                                name="utm_source"
+                                id="utm-source"
+                            />
+                            <input
+                                type="hidden"
+                                name="utm_medium"
+                                id="utm-medium"
+                            />
+                            <input
+                                type="hidden"
+                                name="utm_campaign"
+                                id="utm-campaign"
+                            />
+                            <input
+                                type="hidden"
+                                name="utm_content"
+                                id="utm-content"
+                            />
                             <div class="grid gap-5 sm:grid-cols-2">
                                 <div class="sm:col-span-1">
                                     <label
@@ -1791,7 +1823,7 @@ import "../styles/global.css";
                                                 type="radio"
                                                 name="dor"
                                                 value="perco-controle"
-                                                class="var(--color-accent)"
+                                                class="accent-brand"
                                             />
                                             Perco o controle dos orçamentos enviados
                                         </label>
@@ -1805,7 +1837,7 @@ import "../styles/global.css";
                                                 type="radio"
                                                 name="dor"
                                                 value="demoro-criar"
-                                                class="var(--color-accent)"
+                                                class="accent-brand"
                                             />
                                             Demoro para criar o orçamento
                                         </label>
@@ -1819,7 +1851,7 @@ import "../styles/global.css";
                                                 type="radio"
                                                 name="dor"
                                                 value="outro"
-                                                class="var(--color-accent)"
+                                                class="accent-brand"
                                             />
                                             Outro
                                         </label>
@@ -1887,6 +1919,7 @@ import "../styles/global.css";
                         </div>
 
                         <a
+                            data-track="fake_door_clicked"
                             href="#interesse"
                             class="mt-7 inline-flex min-h-12 shrink-0 items-center
         justify-center rounded-xl bg-brand
@@ -1900,6 +1933,21 @@ import "../styles/global.css";
                 </div>
             </section>
         </main>
+
+        <footer class="border-t border-border bg-white">
+            <div
+                class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8
+    text-sm text-muted sm:px-6 md:flex-row
+    md:items-center md:justify-between lg:px-8"
+            >
+                <p>© 2026 Orcento. Projeto em fase de validação.</p>
+
+                <p class="max-w-xl leading-6 md:text-right">
+                    Os dados enviados são utilizados apenas para contato,
+                    validação do produto e participação no acesso antecipado.
+                </p>
+            </div>
+        </footer>
 
         <script>
             function trackEvent(
@@ -1931,6 +1979,28 @@ import "../styles/global.css";
                         trackEvent(eventName);
                     }
                 });
+            });
+
+            const searchParams = new URLSearchParams(window.location.search);
+
+            const utmFields = {
+                source: document.querySelector("#utm-source"),
+                medium: document.querySelector("#utm-medium"),
+                campaign: document.querySelector("#utm-campaign"),
+                content: document.querySelector("#utm-content"),
+            };
+
+            const utmValues = {
+                source: searchParams.get("utm_source") ?? "",
+                medium: searchParams.get("utm_medium") ?? "",
+                campaign: searchParams.get("utm_campaign") ?? "",
+                content: searchParams.get("utm_content") ?? "",
+            };
+
+            Object.entries(utmFields).forEach(([key, field]) => {
+                if (field instanceof HTMLInputElement) {
+                    field.value = utmValues[key as keyof typeof utmValues];
+                }
             });
 
             const form = document.querySelector("#validation-form");
