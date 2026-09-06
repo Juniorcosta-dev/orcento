@@ -17,6 +17,22 @@ import "../styles/global.css";
 
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta name="robots" content="noindex" />
+
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-72B6FEKD9G"
+        ></script>
+
+        <script is:inline>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+
+            gtag("js", new Date());
+            gtag("config", "G-72B6FEKD9G");
+        </script>
     </head>
 
     <body>
@@ -193,16 +209,46 @@ import "../styles/global.css";
         </main>
 
         <script>
+            function sendAnalyticsEvent(eventName: string) {
+                const gtag = (
+                    window as Window & {
+                        gtag?: (
+                            command: string,
+                            eventName: string,
+                            params?: Record<string, unknown>,
+                        ) => void;
+                    }
+                ).gtag;
+
+                if (typeof gtag === "function") {
+                    gtag("event", eventName);
+                }
+
+                console.log("[analytics]", eventName);
+            }
+
             const priceButtons = document.querySelectorAll(
                 "[data-price-answer]",
             );
             const feedback = document.querySelector("#price-feedback");
 
+            const priceEvents: Record<string, string> = {
+                yes: "price_yes",
+                maybe: "price_maybe",
+                no: "price_no",
+            };
+
             priceButtons.forEach((button) => {
                 button.addEventListener("click", () => {
                     const answer = button.getAttribute("data-price-answer");
 
-                    console.log("price_answer", answer);
+                    if (answer) {
+                        const eventName = priceEvents[answer];
+
+                        if (eventName) {
+                            sendAnalyticsEvent(eventName);
+                        }
+                    }
 
                     priceButtons.forEach((item) => {
                         item.setAttribute("aria-pressed", "false");
@@ -214,6 +260,12 @@ import "../styles/global.css";
                         feedback.classList.remove("hidden");
                     }
                 });
+            });
+
+            const whatsappButton = document.querySelector("#whatsapp-contact");
+
+            whatsappButton?.addEventListener("click", () => {
+                sendAnalyticsEvent("whatsapp_clicked");
             });
         </script>
     </body>

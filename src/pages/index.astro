@@ -43,6 +43,22 @@ import "../styles/global.css";
         <meta name="twitter:image" content="/og-image.png" />
 
         <link rel="icon" type="image/png" href="/favicon.png" />
+
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-72B6FEKD9G"
+        ></script>
+
+        <script is:inline>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+
+            gtag("js", new Date());
+            gtag("config", "G-72B6FEKD9G");
+        </script>
     </head>
 
     <body>
@@ -120,6 +136,7 @@ import "../styles/global.css";
 
                             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
                                 <a
+                                    data-track="cta_clicked"
                                     href="#interesse"
                                     class="inline-flex min-h-12 items-center justify-center
                 rounded-xl bg-brand px-6 py-3
@@ -133,6 +150,7 @@ import "../styles/global.css";
                                 </a>
 
                                 <a
+                                    data-track="demo_clicked"
                                     href="#como-funciona"
                                     class="inline-flex min-h-12 items-center justify-center
                 rounded-xl border border-border
@@ -1884,7 +1902,47 @@ import "../styles/global.css";
         </main>
 
         <script>
+            function trackEvent(
+                eventName: string,
+                params: Record<string, unknown> = {},
+            ) {
+                const gtag = (
+                    window as Window & {
+                        gtag?: (
+                            command: string,
+                            eventName: string,
+                            params?: Record<string, unknown>,
+                        ) => void;
+                    }
+                ).gtag;
+
+                if (typeof gtag === "function") {
+                    gtag("event", eventName, params);
+                }
+
+                console.log("[analytics]", eventName, params);
+            }
+
+            document.querySelectorAll("[data-track]").forEach((element) => {
+                element.addEventListener("click", () => {
+                    const eventName = element.getAttribute("data-track");
+
+                    if (eventName) {
+                        trackEvent(eventName);
+                    }
+                });
+            });
+
             const form = document.querySelector("#validation-form");
+
+            let formStarted = false;
+
+            form?.addEventListener("focusin", () => {
+                if (formStarted) return;
+
+                formStarted = true;
+                trackEvent("form_started");
+            });
 
             if (form instanceof HTMLFormElement) {
                 form.addEventListener("submit", async (event) => {
@@ -1912,7 +1970,7 @@ import "../styles/global.css";
                             throw new Error("Erro ao enviar formulário");
                         }
 
-                        console.log("[validation] form_submitted");
+                        trackEvent("form_submitted");
 
                         window.location.href = "/obrigado";
                     } catch (error) {
