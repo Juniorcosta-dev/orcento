@@ -13,7 +13,8 @@ export default defineConfig({
     site: "https://orcento.vercel.app",
     integrations: [
         sitemap({
-            filter: (page) => !page.endsWith("/obrigado"),
+            filter: (page) =>
+                !page.includes("/obrigado") && !page.includes("/demo"),
         }),
     ],
 });
