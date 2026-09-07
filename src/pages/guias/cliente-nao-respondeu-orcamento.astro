@@ -54,6 +54,60 @@ import "../../styles/global.css";
         <link rel="icon" type="image/png" href="/favicon.png" />
 
         <script
+            type="application/ld+json"
+            is:inline
+            set:html={JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline:
+                    "Cliente visualizou o orçamento e não respondeu: o que fazer?",
+                description:
+                    "Veja quanto tempo esperar, como fazer follow-up pelo WhatsApp e quais mensagens usar quando o cliente recebe o orçamento e não responde.",
+                mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": "https://orcento.vercel.app/guias/cliente-nao-respondeu-orcamento",
+                },
+                author: {
+                    "@type": "Organization",
+                    name: "Orcento",
+                },
+                publisher: {
+                    "@type": "Organization",
+                    name: "Orcento",
+                },
+            })}
+        />
+
+        <script
+            type="application/ld+json"
+            is:inline
+            set:html={JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                    {
+                        "@type": "ListItem",
+                        position: 1,
+                        name: "Início",
+                        item: "https://orcento.vercel.app/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        position: 2,
+                        name: "Guias",
+                        item: "https://orcento.vercel.app/guias",
+                    },
+                    {
+                        "@type": "ListItem",
+                        position: 3,
+                        name: "Cliente não respondeu o orçamento",
+                        item: "https://orcento.vercel.app/guias/cliente-nao-respondeu-orcamento",
+                    },
+                ],
+            })}
+        />
+
+        <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-72B6FEKD9G"
         ></script>
